@@ -1,0 +1,406 @@
+books test data
+
+[
+  {
+    "title": "Brave New World",
+    "isbn": "9780060850524",
+    "publication_date": "1932-08-01",
+    "description": "A futuristic society controlled by technology and conditioning.",
+    "page_count": 288,
+    "language": "en",
+    "author_id": 456,
+    "category_ids": [1, 3]
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "isbn": "9780061120084",
+    "publication_date": "1960-07-11",
+    "description": "A young girl's journey through racial injustice in the Deep South.",
+    "page_count": 281,
+    "language": "en",
+    "author_id": 201,
+    "category_ids": [1, 2]
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "isbn": "9780316769488",
+    "publication_date": "1951-07-16",
+    "description": "A teenager’s perspective on society and growing up.",
+    "page_count": 214,
+    "language": "en",
+    "author_id": 202,
+    "category_ids": [1, 2]
+  },
+  {
+    "title": "Pride and Prejudice",
+    "isbn": "9781503290563",
+    "publication_date": "1813-01-28",
+    "description": "A romantic novel that critiques the British landed gentry.",
+    "page_count": 279,
+    "language": "en",
+    "author_id": 203,
+    "category_ids": [2, 5]
+  },
+  {
+    "title": "Moby Dick",
+    "isbn": "9781503280786",
+    "publication_date": "1851-11-14",
+    "description": "The narrative of Captain Ahab’s obsessive quest for revenge.",
+    "page_count": 635,
+    "language": "en",
+    "author_id": 204,
+    "category_ids": [1, 5]
+  },
+  {
+    "title": "The Road",
+    "isbn": "9780307387899",
+    "publication_date": "2006-09-26",
+    "description": "A post-apocalyptic tale of a father and son’s survival.",
+    "page_count": 287,
+    "language": "en",
+    "author_id": 205,
+    "category_ids": [1, 3]
+  },
+  {
+    "title": "Beloved",
+    "isbn": "9781400033416",
+    "publication_date": "1987-09-02",
+    "description": "A haunting tale of slavery and its aftermath.",
+    "page_count": 324,
+    "language": "en",
+    "author_id": 206,
+    "category_ids": [1, 5]
+  },
+  {
+    "title": "Slaughterhouse-Five",
+    "isbn": "9780440180296",
+    "publication_date": "1969-03-31",
+    "description": "A satirical novel about the bombing of Dresden in WWII.",
+    "page_count": 275,
+    "language": "en",
+    "author_id": 207,
+    "category_ids": [1, 3]
+  },
+  {
+    "title": "Crime and Punishment",
+    "isbn": "9780486415871",
+    "publication_date": "1866-01-01",
+    "description": "A philosophical study of guilt and redemption.",
+    "page_count": 430,
+    "language": "en",
+    "author_id": 208,
+    "category_ids": [2, 5]
+  },
+  {
+    "title": "Frankenstein",
+    "isbn": "9780486282114",
+    "publication_date": "1818-01-01",
+    "description": "A scientist’s dangerous experiment creates a living monster.",
+    "page_count": 280,
+    "language": "en",
+    "author_id": 209,
+    "category_ids": [1, 3]
+  },
+  {
+    "title": "Jane Eyre",
+    "isbn": "9780141441146",
+    "publication_date": "1847-10-16",
+    "description": "An orphan girl overcomes hardships to find love and independence.",
+    "page_count": 532,
+    "language": "en",
+    "author_id": 210,
+    "category_ids": [2, 5]
+  },
+  {
+    "title": "The Book Thief",
+    "isbn": "9780375842207",
+    "publication_date": "2005-03-14",
+    "description": "A young girl steals books and shares them in Nazi Germany.",
+    "page_count": 552,
+    "language": "en",
+    "author_id": 211,
+    "category_ids": [2, 6]
+  },
+  {
+    "title": "Steve Jobs",
+    "isbn": "9781451648539",
+    "publication_date": "2011-10-24",
+    "description": "The biography of Apple’s iconic co-founder.",
+    "page_count": 656,
+    "language": "en",
+    "author_id": 212,
+    "category_ids": [7]
+  },
+  {
+    "title": "Educated",
+    "isbn": "9780399590504",
+    "publication_date": "2018-02-20",
+    "description": "A memoir about a woman who escapes her survivalist family to pursue education.",
+    "page_count": 352,
+    "language": "en",
+    "author_id": 213,
+    "category_ids": [8]
+  },
+  {
+    "title": "Gone Girl",
+    "isbn": "9780307588371",
+    "publication_date": "2012-06-05",
+    "description": "A suspenseful thriller about a missing wife and hidden secrets.",
+    "page_count": 432,
+    "language": "en",
+    "author_id": 214,
+    "category_ids": [9, 10]
+  },
+  {
+    "title": "The Hobbit",
+    "isbn": "9780547928227",
+    "publication_date": "1937-09-21",
+    "description": "Bilbo Baggins goes on a quest with dwarves to reclaim treasure.",
+    "page_count": 310,
+    "language": "en",
+    "author_id": 789,  
+    "category_ids": [11]
+  },
+  {
+    "title": "It",
+    "isbn": "9781501142970",
+    "publication_date": "1986-09-15",
+    "description": "A group of children face a terrifying clown-like entity in their town.",
+    "page_count": 1138,
+    "language": "en",
+    "author_id": 321,
+    "category_ids": [12, 11]
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "isbn": "9780062316097",
+    "publication_date": "2015-02-10",
+    "description": "Explores the history and impact of Homo sapiens on the world.",
+    "page_count": 443,
+    "language": "en",
+    "author_id": 215,
+    "category_ids": [13]
+  },
+  {
+    "title": "The Sun and Her Flowers",
+    "isbn": "9781449486792",
+    "publication_date": "2017-10-03",
+    "description": "A collection of poems about love, loss, and healing.",
+    "page_count": 256,
+    "language": "en",
+    "author_id": 216,
+    "category_ids": [14]
+  },
+  {
+    "title": "Atomic Habits",
+    "isbn": "9780735211292",
+    "publication_date": "2018-10-16",
+    "description": "A guide on building good habits and breaking bad ones.",
+    "page_count": 320,
+    "language": "en",
+    "author_id": 217,
+    "category_ids": [15]
+  },
+  {
+    "title": "The Night Circus",
+    "isbn": "9780307744432",
+    "publication_date": "2011-09-13",
+    "description": "A magical competition between two illusionists in a mystical circus.",
+    "page_count": 387,
+    "language": "en",
+    "author_id": 218,
+    "category_ids": [1, 11]
+  }
+]
+
+
+authors test data
+
+[
+  {
+    "name": "Harper Lee",
+    "biography": "American novelist best known for 'To Kill a Mockingbird'.",
+    "birth_date": "1926-04-28",
+    "country": "United States"
+  },
+  {
+    "name": "J.D. Salinger",
+    "biography": "American writer known for his novel 'The Catcher in the Rye'.",
+    "birth_date": "1919-01-01",
+    "country": "United States"
+  },
+  {
+    "name": "Jane Austen",
+    "biography": "English novelist known for her critiques of British society.",
+    "birth_date": "1775-12-16",
+    "country": "United Kingdom"
+  },
+  {
+    "name": "Herman Melville",
+    "biography": "American author best known for 'Moby-Dick'.",
+    "birth_date": "1819-08-01",
+    "country": "United States"
+  },
+  {
+    "name": "Cormac McCarthy",
+    "biography": "American novelist known for his sparse style and dark themes.",
+    "birth_date": "1933-07-20",
+    "country": "United States"
+  },
+  {
+    "name": "Toni Morrison",
+    "biography": "American novelist and Nobel laureate noted for 'Beloved'.",
+    "birth_date": "1931-02-18",
+    "country": "United States"
+  },
+  {
+    "name": "Kurt Vonnegut",
+    "biography": "American writer famous for blending satire with science fiction.",
+    "birth_date": "1922-11-11",
+    "country": "United States"
+  },
+  {
+    "name": "Fyodor Dostoevsky",
+    "biography": "Russian novelist known for psychological and philosophical works.",
+    "birth_date": "1821-11-11",
+    "country": "Russia"
+  },
+  {
+    "name": "Mary Shelley",
+    "biography": "English novelist who wrote 'Frankenstein'.",
+    "birth_date": "1797-08-30",
+    "country": "United Kingdom"
+  },
+  {
+    "name": "Charlotte Brontë",
+    "biography": "English novelist and poet, author of 'Jane Eyre'.",
+    "birth_date": "1816-04-21",
+    "country": "United Kingdom"
+  },
+  {
+    "name": "J.R.R. Tolkien",
+    "biography": "John Ronald Reuel Tolkien was an English writer, poet, philologist, and academic.",
+    "birth_date": "1892-01-03",
+    "country": "United Kingdom"
+  }
+]
+
+categories test data
+
+[
+  {
+    "name": "Fiction",
+    "description": "Literary works created from the imagination"
+  },
+  {
+    "name": "Classics",
+    "description": "Books that have stood the test of time"
+  },
+  {
+    "name": "Science Fiction",
+    "description": "Fiction based on imagined future scientific discoveries"
+  },
+  {
+    "name": "Literary Fiction",
+    "description": "Narrative fiction with artistic merit and depth"
+  },
+  {
+    "name": "Historical Fiction",
+    "description": "Fictional stories set in the past that incorporate real events or figures"
+  },
+  {
+    "name": "Biography",
+    "description": "An account of a person's life written by someone else"
+  },
+  {
+    "name": "Autobiography",
+    "description": "A self-written account of the author’s own life"
+  },
+  {
+    "name": "Mystery",
+    "description": "Fiction dealing with the solution of a crime or unraveling secrets"
+  },
+  {
+    "name": "Thriller",
+    "description": "Fiction designed to hold the interest by the use of a high degree of intrigue"
+  },
+  {
+    "name": "Fantasy",
+    "description": "Fiction with magical or supernatural elements set in imaginary worlds"
+  },
+  {
+    "name": "Horror",
+    "description": "Fiction intended to scare, unsettle, or horrify the audience"
+  },
+  {
+    "name": "Non-Fiction",
+    "description": "Prose writing based on facts, real events, and real people"
+  },
+  {
+    "name": "Poetry",
+    "description": "Literary work in verse form, often with rhythm and meter"
+  },
+  {
+    "name": "Self-Help",
+    "description": "Books written to guide readers to solve personal problems"
+  }
+]
+
+
+reviews test data
+
+[
+  {
+    "rating": 5,
+    "title": "A timeless masterpiece",
+    "content": "This book blew me away. The writing is beautiful and the themes are still relevant."
+  },
+  {
+    "rating": 4,
+    "title": "Chillingly accurate",
+    "content": "Orwell really predicted the surveillance state. A bit dry in parts, but impactful."
+  },
+  {
+    "rating": 3,
+    "title": "A slow start, but worth it",
+    "content": "Takes a while to get into, but has great character development."
+  },
+  {
+    "rating": 2,
+    "title": "Too long and dense",
+    "content": "I appreciate the symbolism, but this was hard to get through."
+  },
+  {
+    "rating": 4,
+    "title": "Emotional and raw",
+    "content": "Beautiful father-son story in a broken world. Haunting."
+  },
+  {
+    "rating": 5,
+    "title": "Hauntingly beautiful",
+    "content": "A deeply emotional exploration of history and trauma."
+  },
+  {
+    "rating": 5,
+    "title": "Darkly humorous and brilliant",
+    "content": "Vonnegut's style is unique and the message is powerful."
+  },
+  {
+    "rating": 4,
+    "title": "Heavy but powerful",
+    "content": "Not an easy read, but a deep dive into the human psyche."
+  },
+  {
+    "rating": 3,
+    "title": "Interesting concept",
+    "content": "Frankenstein's themes are great, but the style was tough for me."
+  },
+  {
+    "rating": 5,
+    "title": "Loved it!",
+    "content": "One of the best books I’ve read this year. A perfect mix of romance and independence."
+  }
+]
+
+
+
