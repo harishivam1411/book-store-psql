@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Harper Lee",
+    "biography": "American novelist best known for 'To Kill a Mockingbird'.",
+    "birth_date": "1926-04-28",
+    "country": "United States"
+  },
+  {
+    "name": "J.D. Salinger",
+    "biography": "American writer known for his novel 'The Catcher in the Rye'.",
+    "birth_date": "1919-01-01",
+    "country": "United States"
+  },
+  {
+    "name": "Jane Austen",
+    "biography": "English novelist known for her critiques of British society.",
+    "birth_date": "1775-12-16",
+    "country": "United Kingdom"
+  },
+  {
+    "name": "Herman Melville",
+    "biography": "American author best known for 'Moby-Dick'.",
+    "birth_date": "1819-08-01",
+    "country": "United States"
+  },
+  {
+    "name": "Cormac McCarthy",
+    "biography": "American novelist known for his sparse style and dark themes.",
+    "birth_date": "1933-07-20",
+    "country": "United States"
+  },
+  {
+    "name": "Toni Morrison",
+    "biography": "American novelist and Nobel laureate noted for 'Beloved'.",
+    "birth_date": "1931-02-18",
+    "country": "United States"
+  },
+  {
+    "name": "Kurt Vonnegut",
+    "biography": "American writer famous for blending satire with science fiction.",
+    "birth_date": "1922-11-11",
+    "country": "United States"
+  },
+  {
+    "name": "Fyodor Dostoevsky",
+    "biography": "Russian novelist known for psychological and philosophical works.",
+    "birth_date": "1821-11-11",
+    "country": "Russia"
+  },
+  {
+    "name": "Mary Shelley",
+    "biography": "English novelist who wrote 'Frankenstein'.",
+    "birth_date": "1797-08-30",
+    "country": "United Kingdom"
+  },
+  {
+    "name": "Charlotte Brontë",
+    "biography": "English novelist and poet, author of 'Jane Eyre'.",
+    "birth_date": "1816-04-21",
+    "country": "United Kingdom"
+  },
+  {
+    "name": "J.R.R. Tolkien",
+    "biography": "John Ronald Reuel Tolkien was an English writer, poet, philologist, and academic.",
+    "birth_date": "1892-01-03",
+    "country": "United Kingdom"
+  }
+]

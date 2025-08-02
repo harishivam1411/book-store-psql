@@ -1,31 +1,34 @@
 import os
+
 from dotenv import load_dotenv
-from sqlalchemy.orm import sessionmaker
-from store.models.db_model import Base
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
+from sqlalchemy.orm import sessionmaker
+
+from store.models.db_model import Base
 
 load_dotenv()
 
-DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql+asyncpg://postgres:postgresql@localhost:5432/book_store')
+DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql+asyncpg://postgres:postgres@localhost:5432/book_store')
 
 # Create async engine
-engine = create_async_engine(DATABASE_URL, echo=True)
+engine = create_async_engine(DATABASE_URL, echo=False)
 
 # Create async session factory
 async_session = sessionmaker(
-    engine, 
+    engine,  
     class_=AsyncSession, 
     expire_on_commit=False
-)
+) # pyright: ignore[reportCallIssue]
 
 # Function to initialize tables
 async def init_db():
     async with engine.begin() as conn:
+        #await conn.run_sync(Base.metadata.drop_all)
         await conn.run_sync(Base.metadata.create_all)
 
 async def get_database():
     """Get a database session for dependency injection"""
-    async with async_session() as session:
+    async with async_session() as session: # pyright: ignore[reportGeneralTypeIssues]
         try:
             yield session
         finally:

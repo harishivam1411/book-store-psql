@@ -9,10 +9,10 @@ Base = declarative_base()
 
 # Association table for many-to-many relationship between books and categories
 book_category = Table(
-    'book_category',
+    "book_category",
     Base.metadata,
-    Column('book_id', Integer, ForeignKey('books.id', ondelete='CASCADE')),
-    Column('category_id', Integer, ForeignKey('categories.id', ondelete='CASCADE'))
+    Column("book_id", Integer, ForeignKey("books.id"), primary_key=True),
+    Column("category_id", Integer, ForeignKey("categories.id"), primary_key=True),
 )
 
 class User(Base):
@@ -72,6 +72,7 @@ class Book(Base):
     page_count = Column(Integer)
     language = Column(String)
     average_rating = Column(Float, default=0)
+    price = Column(Integer, default=500)
     author_id = Column(Integer, ForeignKey("authors.id", ondelete="SET NULL"))
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
     updated_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
@@ -96,3 +97,51 @@ class Review(Base):
     # Relationships
     user = relationship("User", back_populates="reviews")
     book = relationship("Book", back_populates="reviews")
+
+class Order(Base):
+    __tablename__ = "orders"
+
+    id = Column(Integer, primary_key=True, index=True)
+    total_amount = Column(Float)
+    created_at = Column(
+        DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
+    )
+    updated_at = Column(
+        DateTime(timezone=True),
+        default=lambda: datetime.now(timezone.utc),
+        onupdate=lambda: datetime.now(timezone.utc),
+    )
+
+    items = relationship(
+        "OrderItem",
+        back_populates="order",
+        cascade="all, delete-orphan",
+        lazy="selectin",
+    )
+
+
+class OrderItem(Base):
+    __tablename__ = "order_items"
+
+    id = Column(Integer, primary_key=True, index=True)
+    order_id = Column(Integer, ForeignKey("orders.id"))
+    book_id = Column(Integer, ForeignKey("books.id"))
+    quantity = Column(Integer)
+    price_per_item = Column(Float)
+
+    order = relationship("Order", back_populates="items", lazy="selectin")
+
+class OrderTransaction(Base):
+    __tablename__ = "order_transactions"
+
+    id = Column(Integer, primary_key=True, index=True)
+    order_id = Column(Integer, unique=True)
+    total_amount = Column(Integer)
+    created_at = Column(
+        DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
+    )
+    updated_at = Column(
+        DateTime(timezone=True),
+        default=lambda: datetime.now(timezone.utc),
+        onupdate=lambda: datetime.now(timezone.utc),
+    )

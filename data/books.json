@@ -1,0 +1,212 @@
+[
+  {
+    "title": "Brave New World",
+    "isbn": "9780060850524",
+    "publication_date": "1932-08-01",
+    "description": "A futuristic society controlled by technology and conditioning.",
+    "page_count": 288,
+    "language": "en",
+    "author_id": 6,
+    "category_ids": [1, 3]
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "isbn": "9780061120084",
+    "publication_date": "1960-07-11",
+    "description": "A young girl's journey through racial injustice in the Deep South.",
+    "page_count": 281,
+    "language": "en",
+    "author_id": 1,
+    "category_ids": [1, 2]
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "isbn": "9780316769488",
+    "publication_date": "1951-07-16",
+    "description": "A teenager’s perspective on society and growing up.",
+    "page_count": 214,
+    "language": "en",
+    "author_id": 2,
+    "category_ids": [1, 2]
+  },
+  {
+    "title": "Pride and Prejudice",
+    "isbn": "9781503290563",
+    "publication_date": "1813-01-28",
+    "description": "A romantic novel that critiques the British landed gentry.",
+    "page_count": 279,
+    "language": "en",
+    "author_id": 3,
+    "category_ids": [2, 5]
+  },
+  {
+    "title": "Moby Dick",
+    "isbn": "9781503280786",
+    "publication_date": "1851-11-14",
+    "description": "The narrative of Captain Ahab’s obsessive quest for revenge.",
+    "page_count": 635,
+    "language": "en",
+    "author_id": 4,
+    "category_ids": [1, 5]
+  },
+  {
+    "title": "The Road",
+    "isbn": "9780307387899",
+    "publication_date": "2006-09-26",
+    "description": "A post-apocalyptic tale of a father and son’s survival.",
+    "page_count": 287,
+    "language": "en",
+    "author_id": 5,
+    "category_ids": [1, 3]
+  },
+  {
+    "title": "Beloved",
+    "isbn": "9781400033416",
+    "publication_date": "1987-09-02",
+    "description": "A haunting tale of slavery and its aftermath.",
+    "page_count": 324,
+    "language": "en",
+    "author_id": 6,
+    "category_ids": [1, 5]
+  },
+  {
+    "title": "Slaughterhouse-Five",
+    "isbn": "9780440180296",
+    "publication_date": "1969-03-31",
+    "description": "A satirical novel about the bombing of Dresden in WWII.",
+    "page_count": 275,
+    "language": "en",
+    "author_id": 7,
+    "category_ids": [1, 3]
+  },
+  {
+    "title": "Crime and Punishment",
+    "isbn": "9780486415871",
+    "publication_date": "1866-01-01",
+    "description": "A philosophical study of guilt and redemption.",
+    "page_count": 430,
+    "language": "en",
+    "author_id": 8,
+    "category_ids": [2, 5]
+  },
+  {
+    "title": "Frankenstein",
+    "isbn": "9780486282114",
+    "publication_date": "1818-01-01",
+    "description": "A scientist’s dangerous experiment creates a living monster.",
+    "page_count": 280,
+    "language": "en",
+    "author_id": 9,
+    "category_ids": [1, 3]
+  },
+  {
+    "title": "Jane Eyre",
+    "isbn": "9780141441146",
+    "publication_date": "1847-10-16",
+    "description": "An orphan girl overcomes hardships to find love and independence.",
+    "page_count": 532,
+    "language": "en",
+    "author_id": 10,
+    "category_ids": [2, 5]
+  },
+  {
+    "title": "The Book Thief",
+    "isbn": "9780375842207",
+    "publication_date": "2005-03-14",
+    "description": "A young girl steals books and shares them in Nazi Germany.",
+    "page_count": 552,
+    "language": "en",
+    "author_id": 11,
+    "category_ids": [2, 6]
+  },
+  {
+    "title": "Steve Jobs",
+    "isbn": "9781451648539",
+    "publication_date": "2011-10-24",
+    "description": "The biography of Apple’s iconic co-founder.",
+    "page_count": 656,
+    "language": "en",
+    "author_id": 2,
+    "category_ids": [7]
+  },
+  {
+    "title": "Educated",
+    "isbn": "9780399590504",
+    "publication_date": "2018-02-20",
+    "description": "A memoir about a woman who escapes her survivalist family to pursue education.",
+    "page_count": 352,
+    "language": "en",
+    "author_id": 3,
+    "category_ids": [8]
+  },
+  {
+    "title": "Gone Girl",
+    "isbn": "9780307588371",
+    "publication_date": "2012-06-05",
+    "description": "A suspenseful thriller about a missing wife and hidden secrets.",
+    "page_count": 432,
+    "language": "en",
+    "author_id": 4,
+    "category_ids": [9, 10]
+  },
+  {
+    "title": "The Hobbit",
+    "isbn": "9780547928227",
+    "publication_date": "1937-09-21",
+    "description": "Bilbo Baggins goes on a quest with dwarves to reclaim treasure.",
+    "page_count": 310,
+    "language": "en",
+    "author_id": 9,  
+    "category_ids": [11]
+  },
+  {
+    "title": "It",
+    "isbn": "9781501142970",
+    "publication_date": "1986-09-15",
+    "description": "A group of children face a terrifying clown-like entity in their town.",
+    "page_count": 1138,
+    "language": "en",
+    "author_id": 3,
+    "category_ids": [12, 11]
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "isbn": "9780062316097",
+    "publication_date": "2015-02-10",
+    "description": "Explores the history and impact of Homo sapiens on the world.",
+    "page_count": 443,
+    "language": "en",
+    "author_id": 5,
+    "category_ids": [13]
+  },
+  {
+    "title": "The Sun and Her Flowers",
+    "isbn": "9781449486792",
+    "publication_date": "2017-10-03",
+    "description": "A collection of poems about love, loss, and healing.",
+    "page_count": 256,
+    "language": "en",
+    "author_id": 6,
+    "category_ids": [14]
+  },
+  {
+    "title": "Atomic Habits",
+    "isbn": "9780735211292",
+    "publication_date": "2018-10-16",
+    "description": "A guide on building good habits and breaking bad ones.",
+    "page_count": 320,
+    "language": "en",
+    "author_id": 7,
+    "category_ids": [12]
+  },
+  {
+    "title": "The Night Circus",
+    "isbn": "9780307744432",
+    "publication_date": "2011-09-13",
+    "description": "A magical competition between two illusionists in a mystical circus.",
+    "page_count": 387,
+    "language": "en",
+    "author_id": 8,
+    "category_ids": [1, 11]
+  }
+]

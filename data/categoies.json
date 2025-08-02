@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Fiction",
+    "description": "Literary works created from the imagination"
+  },
+  {
+    "name": "Classics",
+    "description": "Books that have stood the test of time"
+  },
+  {
+    "name": "Science Fiction",
+    "description": "Fiction based on imagined future scientific discoveries"
+  },
+  {
+    "name": "Literary Fiction",
+    "description": "Narrative fiction with artistic merit and depth"
+  },
+  {
+    "name": "Historical Fiction",
+    "description": "Fictional stories set in the past that incorporate real events or figures"
+  },
+  {
+    "name": "Biography",
+    "description": "An account of a person's life written by someone else"
+  },
+  {
+    "name": "Autobiography",
+    "description": "A self-written account of the author’s own life"
+  },
+  {
+    "name": "Mystery",
+    "description": "Fiction dealing with the solution of a crime or unraveling secrets"
+  },
+  {
+    "name": "Thriller",
+    "description": "Fiction designed to hold the interest by the use of a high degree of intrigue"
+  },
+  {
+    "name": "Fantasy",
+    "description": "Fiction with magical or supernatural elements set in imaginary worlds"
+  },
+  {
+    "name": "Horror",
+    "description": "Fiction intended to scare, unsettle, or horrify the audience"
+  },
+  {
+    "name": "Non-Fiction",
+    "description": "Prose writing based on facts, real events, and real people"
+  },
+  {
+    "name": "Poetry",
+    "description": "Literary work in verse form, often with rhythm and meter"
+  },
+  {
+    "name": "Self-Help",
+    "description": "Books written to guide readers to solve personal problems"
+  }
+]
