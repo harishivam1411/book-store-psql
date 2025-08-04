@@ -130,18 +130,3 @@ class OrderItem(Base):
     price_per_item = Column(Float)
 
     order = relationship("Order", back_populates="items", lazy="selectin")
-
-class OrderTransaction(Base):
-    __tablename__ = "order_transactions"
-
-    id = Column(Integer, primary_key=True, index=True)
-    order_id = Column(Integer, unique=True)
-    total_amount = Column(Integer)
-    created_at = Column(
-        DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
-    )
-    updated_at = Column(
-        DateTime(timezone=True),
-        default=lambda: datetime.now(timezone.utc),
-        onupdate=lambda: datetime.now(timezone.utc),
-    )

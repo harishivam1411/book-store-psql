@@ -1,16 +1,19 @@
-
-from fastapi import FastAPI, Request
-from pydantic import BaseModel
+from contextlib import asynccontextmanager
 from datetime import datetime
-from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
-from sqlalchemy import Column, Integer, String, DateTime
+
+import uvicorn
+from store.database import init_db
+from fastapi import FastAPI
+from pydantic import BaseModel
+from sqlalchemy import Column, DateTime, Integer, String
+from sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine
 from sqlalchemy.orm import declarative_base
 
 app = FastAPI()
 Base = declarative_base()
 
 DATABASE_URL = "sqlite+aiosqlite:///./logs.db"
-engine = create_async_engine(DATABASE_URL, echo=True)
+engine = create_async_engine(DATABASE_URL, echo=False)
 Session = async_sessionmaker(engine, expire_on_commit=False)
 
 
@@ -21,10 +24,10 @@ class Log(Base):
     timestamp = Column(DateTime, default=datetime.utcnow)
 
 
-@app.on_event("startup")
-async def startup():
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    await init_db()
+    yield
 
 
 class LogData(BaseModel):
@@ -38,3 +41,7 @@ async def create_log(log: LogData):
         session.add(new_log)
         await session.commit()
         return {"status": "logged"}
+
+
+if __name__ == "__main__":
+    uvicorn.run("store.log:app", host="127.0.0.1", port=9000, reload=True)

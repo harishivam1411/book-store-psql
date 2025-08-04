@@ -5,7 +5,7 @@ from fastapi import HTTPException
 from store.models.db_model import Book, Order, OrderItem
 from store.models.order_model import OrderCreate
 from confluent_kafka import Producer
-from kafka_config import COMMON_CONFIG
+from store.kafka_config import PRODUCER_CONFIG
 import json  
 
 async def create_order(db: AsyncSession, order_data: OrderCreate) -> Order:
@@ -52,7 +52,7 @@ async def create_order(db: AsyncSession, order_data: OrderCreate) -> Order:
         }
 
         # Create Producer instance
-        producer = Producer(COMMON_CONFIG)
+        producer = Producer(PRODUCER_CONFIG)
 
         producer.produce(
             topic="order",

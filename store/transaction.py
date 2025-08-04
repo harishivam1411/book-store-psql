@@ -1,20 +1,43 @@
-# transaction_service/main.py
 import asyncio
 import json
-from confluent_kafka import Consumer
-from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
-from store.models.db_model import Base, OrderTransaction  
-from kafka_config import COMMON_CONFIG
 import os
+from datetime import datetime, timezone
 
+from confluent_kafka import Consumer
 from dotenv import load_dotenv
+from kafka_config import CONSUMER_CONFIG
+from sqlalchemy import Column, DateTime, Integer
+from sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine
+from sqlalchemy.orm import declarative_base
+
+Base = declarative_base()
+
 load_dotenv()
-DATABASE_URL = os.environ.get('DATABASE_URL')
+DATABASE_URL = os.environ.get(
+    "DATABASE_URL", "postgresql+asyncpg://postgres:postgres@localhost:5432/book_store"
+)
+
+
+class OrderTransaction(Base):
+    __tablename__ = "order_transactions"
+
+    id = Column(Integer, primary_key=True, index=True)
+    order_id = Column(Integer, unique=True)
+    total_amount = Column(Integer)
+    created_at = Column(
+        DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
+    )
+    updated_at = Column(
+        DateTime(timezone=True),
+        default=lambda: datetime.now(timezone.utc),
+        onupdate=lambda: datetime.now(timezone.utc),
+    )
+
 
 engine = create_async_engine(DATABASE_URL, echo=False)
 async_session = async_sessionmaker(engine, expire_on_commit=False)
 
-consumer_config = {**COMMON_CONFIG}
+consumer_config = {**CONSUMER_CONFIG, "group.id": "transaction-service"}
 
 consumer = Consumer(consumer_config)
 consumer.subscribe(["order"])

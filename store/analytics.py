@@ -1,12 +1,13 @@
-# analytics_service/main.py
 import json
+
 import requests
 from confluent_kafka import Consumer
-from kafka_config import COMMON_CONFIG
 
-LOG_SERVICE_URL = "http://localhost:8001/log"
+from kafka_config import CONSUMER_CONFIG
 
-consumer_config = {**COMMON_CONFIG}
+LOG_SERVICE_URL = "http://localhost:9000/log"
+
+consumer_config = {**CONSUMER_CONFIG, "group.id": "analytics-service"}
 
 consumer = Consumer(consumer_config)
 consumer.subscribe(["order"])

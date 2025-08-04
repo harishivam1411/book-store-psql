@@ -3,6 +3,7 @@
 *.pyc
 __pycache__
 db.sqlite3
+logs.db
 media
 kafka_config.py
 
